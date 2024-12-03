@@ -16,8 +16,8 @@ module.exports = {
     },
     extend: {
       colors:{
-        primary: '242a2b',
-        secondary: '808080',
+        primary: '#242a2b',
+        secondary: '#808080',
         accent:{
           DEFAULT: '#6D1D2A',
           secondary: '#5f1b26',
@@ -33,8 +33,12 @@ module.exports = {
         custom2: '0px 2px 40px 0px rgba(95, 27, 38, 0.6)',
       },
       backgroundImage:{
-        servicios: 'url(../../assets/img/services)',
-        
+        services: 'url(../../assets/img/services/bg.svg)',
+        testimonials: 'url(../../assets/img/testimonials/bg.svg)',
+        valores: 'url(../../assets/img/valores/bg.svg)',
+        quoteLeft: 'url(../../assets/icons/testimonials/quote-left.svg)',
+        quoteRight: 'url(../../assets/icons/testimonials/quote-rig.svg)',
+
 
       },
     },

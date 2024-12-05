@@ -29,7 +29,7 @@ module.exports = {
         primary: 'Poppins'
       },
       boxShadow:{
-        custom1: '0px 2px 40px 0px rgba(109, 29, 2, 0.80)',
+        custom1: '0px 2px 40px 0px rgba(109, 29, 2, 0.2)',
         custom2: '0px 2px 40px 0px rgba(95, 27, 38, 0.6)',
       },
       backgroundImage:{

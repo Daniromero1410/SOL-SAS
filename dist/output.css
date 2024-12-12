@@ -698,6 +698,10 @@ video {
   margin-top: 0px !important;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -863,6 +867,10 @@ video {
   max-width: 600px;
 }
 
+.max-w-\[400px\] {
+  max-width: 400px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -948,6 +956,11 @@ video {
 
 .gap-y-2 {
   row-gap: 0.5rem;
+}
+
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .self-end {
@@ -1873,6 +1886,50 @@ h5 {
 
   .xl\:-mt-\[144px\] {
     margin-top: -144px;
+  }
+
+  .xl\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .xl\:mb-\[50px\] {
+    margin-bottom: 50px;
+  }
+
+  .xl\:mb-\[20px\] {
+    margin-bottom: 20px;
+  }
+
+  .xl\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .xl\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .xl\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .xl\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .xl\:ml-32 {
+    margin-left: 8rem;
+  }
+
+  .xl\:ml-\[64px\] {
+    margin-left: 64px;
+  }
+
+  .xl\:ml-\[144px\] {
+    margin-left: 144px;
+  }
+
+  .xl\:ml-60 {
+    margin-left: 15rem;
   }
 
   .xl\:block {

@@ -78,3 +78,26 @@ h5{
     @apply h-full;
 }
 
+.icon-container {
+            background: #ffffff;
+            box-shadow: 
+                8px 8px 16px rgba(0, 0, 0, 0.1),
+                -8px -8px 16px rgba(255, 255, 255, 0.8),
+                inset 2px 2px 4px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+        }
+        
+        
+.overflow-x-auto::-webkit-scrollbar {
+            display: none;
+        }
+        
+        
+.overflow-x-auto {
+            scrollbar-width: none;
+        }
+        
+        
+.services-list {
+            transition: transform 0.3s ease-in-out;
+        }

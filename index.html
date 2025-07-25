@@ -49,8 +49,7 @@
                 Contactanos
             </button>
             <!--Movil-->
-            <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] shadow-2xl
-            lg:hidden transition-all duration-300 z-20 ">
+            <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] shadow-2xl lg:hidden transition-all duration-300 z-20 ">
                 
                 <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg 
                 rounded-br-lg cursor-pointer transition-all">
@@ -94,12 +93,8 @@
                     <!--Formulario-->
                     <form class="relative flex gap-x-[10px]">
                         <label for="">
-                            <i class="ri-search-line text-2xl text-accent"></i>
+                            <i class="ri-home-4-fill text-2xl text-yellow-500 hover:text-accent"></i>
                         </label>
-                        <input type="text" id="mnav-search-input" 
-                        placeholder="Buscar.."
-                        class="outline-none w-[160px] border-b-2 focus:border-b-2 focus:border-accent placeholder:italic "
-                        />
                     </form>
                 </div>
             </nav>
@@ -135,13 +130,8 @@
                 </ul>
                 <form class="relative flex gap-x-[10px]">
                     <label for="search-input" class="flex justify-center items-center group">
-                        <i class="ri-search-line text-2xl text-yellow-400"></i>
+                        <i class="ri-home-4-fill text-2xl text-yellow-400 hover:text-accent transition-all"></i>
                     </label>
-                    <input type="text" 
-                    id="search-input" 
-                    placeholder="Buscar..."
-                    class="outline-none w-[100px] focus:w-[180px] focus:-border-b-2 focus:border-accent
-                    placeholder-italic placeholder:text-base transition-all duration-150 ">
                 </form>
             </nav>
         </div>
@@ -235,11 +225,11 @@
 
       </div>
     </div>
-  </section>
+    </section>
   <!--Fin Valores-->
 
   <!--Servicios-->
-  <section class="services">
+    <section class="services">
     <!--Bg-->
     <div class="bg-red-900 rounded-[20px] mx-4 sm:mx-6 lg:mx-8 xl:mx-auto max-w-[1466px] px-4 sm:px-6 md:px-8 lg:px-12 py-8 md:py-12 xl:pt-[70px] h-auto md:h-[368px] flex flex-col lg:flex-row
     items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-12 ">
@@ -446,23 +436,317 @@
             </svg>
         </button>
     </div>
-</section>
+    </section>
   <!--Fin Servicios-->
 
 <!-- Reservas de citas -->
- <section class="appointment section">
-    <div class="container mx-auto">
-        <!-- Texto -->
-         <h2>Reserva una Asesoria o llamanos <span>(+57) 31244486889</span></h2>
-
-    </div>
- </section>
+    <section class="appointment py-12 sm:py-16 lg:py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+                <!-- Título y teléfono -->
+                <div class="text-center lg:text-left mb-8 lg:mb-12">
+                    <h2 class="appointment__title text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 mb-3 sm:mb-4">
+                        Reserva Una<br class="sm:hidden"> Asesoría
+                    </h2>
+                    <div class="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-2">
+                        O Llámanos:
+                    </div>
+                    <div class="phone-number text-xl sm:text-2xl lg:text-3xl font-bold text-accent-tertiary">
+                        (+57) 31244486889
+                    </div>
+                </div>
+                
+                <!-- Formulario Simplificado -->
+                <form class="appointment__form space-y-5 sm:space-y-6">
+                    <!-- Información personal -->
+                    <div class="form-element flex flex-col sm:flex-row gap-4 sm:gap-5">
+                        <input 
+                            type="text" 
+                            class="input flex-1" 
+                            placeholder="Nombre completo"
+                            required 
+                        />
+                        <input 
+                            type="tel" 
+                            class="input flex-1" 
+                            placeholder="Número de teléfono"
+                            required 
+                        />
+                    </div>
+                    
+                    <!-- Fecha y hora -->
+                    <div class="form-element flex flex-col sm:flex-row gap-4 sm:gap-5">
+                        <div class="flex-1">
+                            <input 
+                                class="input w-full" 
+                                type="date"
+                                required
+                                min=""
+                            />
+                        </div>
+                        <div class="flex-1">
+                            <input 
+                                class="input w-full" 
+                                type="time"
+                                required
+                                min="08:00"
+                                max="18:00"
+                            />
+                        </div>
+                    </div>
+                    
+                    <!-- Mensaje adicional (opcional) -->
+                    <div class="form-element">
+                        <textarea 
+                            class="input w-full min-h-[100px] py-4 resize-none" 
+                            placeholder="Mensaje adicional (opcional)"
+                            rows="3"
+                        ></textarea>
+                    </div>
+                    
+                    <!-- Botón de envío -->
+                    <div class="flex justify-center">
+                        <button type="submit" class="border-2 border-accent text-accent-secondary hover:bg-accent hover:text-white font-medium py-4 px-7 rounded-lg transition-all duration-300 w-full sm:w-auto sm:min-w-[280px] flex items-center justify-center gap-3 group hover:scale-[1.02] hover:shadow-lg">
+                            <i class="ri-calendar-check-line text-lg transition-transform group-hover:scale-110 group-hover:rotate-3"></i>
+                            <span class="text-base font-semibold tracking-wide">Agende su cita</span>
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Información adicional -->
+                <div class="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                    <div class="flex flex-col items-center space-y-2">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                            <i class="ri-time-line text-red-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800">Horario</h4>
+                        <p class="text-sm text-gray-600">Lun - Jue : 8:00 AM - 4:30 PM</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center space-y-2">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                            <i class="ri-phone-line text-red-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800">Contacto Inmediato</h4>
+                        <p class="text-sm text-gray-600">Respuesta en menos de 1 hora</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center space-y-2">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                            <i class="ri-shield-check-line text-red-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800">100% Seguro</h4>
+                        <p class="text-sm text-gray-600">Información protegida</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 <!-- Fin Reservas de citas --> 
-  
-  
+
+<!--Info extra-->
+<section class="info section">
+        <div class="info__bg bg-red-900 bg-cover xl:bg-auto bg-center bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px] px-6 xl:px-0 py-12 xl:pt-[80px] xl:pb-[90px] relative min-h-[588px] flex items-center">
+            <div class="info__container container mx-auto">
+                <div class="flex flex-col xl:flex-row gap-x-5">
+                    <div class="xl:w-[310px] flex flex-col gap-y-[30px] xl:gap-y-[40px] font-medium uppercase text-center xl:text-left text-base text-white xl:pt-3 xl:text-[17px] mb-[50px] xl:mb-0">
+                        <div class="menu-item cursor-pointer active" data-section="mision">
+                            Misión
+                        </div>
+                        <div class="menu-item cursor-pointer" data-section="vision">
+                            Visión
+                        </div>
+                        <div class="menu-item cursor-pointer" data-section="ofrecemos">
+                            ¿Qué Ofrecemos?
+                        </div>
+                        <div class="menu-item cursor-pointer" data-section="hacemos">
+                            ¿Qué Hacemos?
+                        </div>
+                        <div class="menu-item cursor-pointer" data-section="equipo">
+                            Nuestro Equipo
+                        </div>
+                        <div class="menu-item cursor-pointer" data-section="beneficios">
+                            Beneficios para su Empresa
+                        </div>
+                    </div>
+                    
+                    <div class="xl:w-[640px]">
+                        <!-- Contenido dinámico -->
+                        <div id="content-container" class="content-transition">
+                            <!-- Misión (contenido inicial) -->
+                            <div class="content-section" data-content="mision">
+                                <h2 class="text-4xl font-bold mb-[20px] text-center xl:text-left text-white">Misión</h2>
+                                <p class="mb-[30px] font-light text-center xl:text-left text-white leading-relaxed">
+                                    S.O.L Servicios Ocupacionales y Laborales se constituye como una alternativa de apoyo para las empresas y las administradoras de riesgos laborales en la identificación, intervención y resolución de los eventos que alteren el desarrollo laboral pleno de los trabajadores dentro de su entorno de trabajo.
+                                    <br /><br />
+                                    Brindamos asesoría técnica, legal y organizacional para cumplir con la Resolución 3050 de 2022 del Ministerio del Trabajo, garantizando un reintegro laboral seguro, justo y eficiente.
+                                </p>
+                            </div>
+                            
+                            <!-- Visión -->
+                            <div class="content-section hidden" data-content="vision">
+                                <h2 class="text-4xl font-bold mb-[20px] text-center xl:text-left text-white">Visión</h2>
+                                <p class="mb-[30px] font-light text-center xl:text-left text-white leading-relaxed">
+                                    Ser reconocidos como la empresa líder en servicios ocupacionales y laborales en Colombia, siendo referente en la implementación de soluciones innovadoras y efectivas para el bienestar laboral.
+                                    <br /><br />
+                                    Aspiramos a transformar el entorno laboral colombiano, promoviendo espacios de trabajo seguros, inclusivos y productivos que contribuyan al desarrollo integral de los trabajadores y al crecimiento sostenible de las organizaciones.
+                                </p>
+                            </div>
+                            
+                            <!-- Qué Ofrecemos -->
+                            <div class="content-section hidden" data-content="ofrecemos">
+                                <h2 class="text-4xl font-bold mb-[20px] text-center xl:text-left text-white">¿Qué Ofrecemos?</h2>
+                                <p class="mb-[30px] font-light text-center xl:text-left text-white leading-relaxed">
+                                    Brindamos asesoría técnica, legal y organizacional a empresas que buscan cumplir con la Resolución 3050 de 2022 del Ministerio del Trabajo, 
+                                    garantizando un reintegro laboral seguro, justo y eficiente para trabajadores con pérdida de capacidad laboral.
+                                    
+                                </p>
+                            </div>
+                            
+                            <!-- Qué Hacemos -->
+                            <div class="content-section hidden" data-content="hacemos">
+                                <h2 class="text-4xl font-bold mb-[20px] text-center xl:text-left text-white">¿Qué Hacemos?</h2>
+                                <p class="mb-[30px] font-light text-center xl:text-left text-white leading-relaxed">
+                                    Acompañamos a las organizaciones en el diseño e implementación del proceso de rehabilitación laboral,
+                                    garantizando el cumplimiento de los lineamientos del Ministerio de Trabajo y reduciendo riesgos legales y operativos. 
+                                </p>
+                            </div>
+                            
+                            <!-- Nuestro Equipo -->
+                            <div class="content-section hidden" data-content="equipo">
+                                <h2 class="text-4xl font-bold mb-[20px] text-center xl:text-left text-white">Nuestro Equipo</h2>
+                                <p class="mb-[30px] font-light text-center xl:text-left text-white leading-relaxed">
+                                    Contamos con un equipo interdisciplinario de profesionales:
+                                    <br /><br />
+                                    • Especialistas en Seguridad y Salud en el Trabajo (SST)<br/>
+                                    • Psicólogos Organizacionales<br/>
+                                    • Terapeutas ocupacionales y fisioterapeutas<br/>
+                                    • Abogados laborales<br/>
+                                    • Ingenieros ergónomos
+                                </p>
+                            </div>
+                            
+                            <!-- Beneficios para su Empresa -->
+                            <div class="content-section hidden" data-content="beneficios">
+                                <h2 class="text-4xl font-bold mb-[20px] text-center xl:text-left text-white">Beneficios para su Empresa</h2>
+                                <p class="mb-[30px] font-light text-center xl:text-left text-white leading-relaxed">
+                                    Al elegir S.O.L , su empresa obtiene ventajas competitivas significativas:
+                                    <br /><br />
+                                    • Cumplimiento normativo frente al Ministerio del Trabajo<br/>
+                                    • Reducción de sanciones y conflictos legales<br/>
+                                    • Mejor clima laboral e inclusión organizacional<br/>
+                                    • Estandarización del proceso de reintegro<br/>
+                                    • Disminución del ausentismo e incapacidades prolongadas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Fin info extra-->
+
+<!--Footer-->
+<footer class="footer bg-gray-900 text-white pt-8 md:pt-12">
+        <div class="container mx-auto px-4 pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Sección de Contacto -->
+                <div class="lg:col-span-2">
+                    <a href="" class="inline-block mb-4">
+                        <!-- Logo más pequeño y responsivo -->
+                        <div class="w-20 h-20 md:w-24 md:h-24  rounded-lg flex items-center justify-center">
+                            <img src="./assets/img/header/logo.svg" alt="">
+                        </div>
+                    </a>
+                    
+                    <!-- Descripción más corta -->
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed max-w-md">
+                        Somos una empresa comprometida con la excelencia en nuestros servicios y la satisfacción de nuestros clientes.
+                    </p>
+                    
+                    <!-- Información de contacto -->
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-3 text-sm">
+                            <i class="ri-map-pin-5-fill text-accent flex-shrink-0"></i>
+                            <span class="text-gray-300">Floridablanca, Santander</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm">
+                            <i class="ri-mail-fill text-accent flex-shrink-0"></i>
+                            <span class="text-gray-300">sol.2023@gmail.com</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm">
+                            <i class="ri-phone-fill text-accent flex-shrink-0"></i>
+                            <span class="text-gray-300">(+57) 3124486889</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Redes sociales más compactas -->
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-accent-tertiary hover:text-accent hover:bg-gray-700 transition-all duration-300">
+                            <i class="ri-facebook-circle-fill text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-accent-tertiary hover:text-accent hover:bg-gray-700 transition-all duration-300">
+                            <i class="ri-instagram-fill text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-accent-tertiary hover:text-accent hover:bg-gray-700 transition-all duration-300">
+                            <i class="ri-linkedin-box-fill text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-accent-tertiary hover:text-accent hover:bg-gray-700 transition-all duration-300">
+                            <i class="ri-whatsapp-fill text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Enlaces Rápidos -->
+                <div class="footer__item">
+                    <h4 class="text-lg font-semibold mb-4 text-white">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-colors duration-300 text-sm">Inicio</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-colors duration-300 text-sm">Nuestros Valores</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-colors duration-300 text-sm">Nuestros Servicios</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-colors duration-300 text-sm">Sobre Nosotros</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-accent transition-colors duration-300 text-sm">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Horario de Atención -->
+                <div class="footer__item">
+                    <h4 class="text-lg font-semibold mb-4 text-white">Horario de Atención</h4>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center pb-2 border-b border-gray-700">
+                            <span class="text-gray-300 text-sm">Lunes - Jueves</span>
+                            <span class="text-yellow-500 font-medium text-sm">8:00 - 16:30</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-2 border-b border-gray-700">
+                            <span class="text-gray-300 text-sm">Viernes</span>
+                            <span class="text-yellow-500 font-medium text-sm">8:00 - 16:00</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-2 border-b border-gray-700">
+                            <span class="text-gray-300 text-sm">Sábado</span>
+                            <span class="text-yellow-500 font-medium text-sm text-right">Email/WhatsApp</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-2 border-b border-gray-700">
+                            <span class="text-gray-300 text-sm">Domingo</span>
+                            <span class="text-red-400 font-medium text-sm">Cerrado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright más compacto -->
+        <div class="border-t border-gray-700 py-4">
+            <div class="container mx-auto px-4 text-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 SOL S.A.S - Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+<!--Fin Footer-->
   
     <!--Temp div-->
-    <div class="h-[4000px]"></div>
+    <!--<div class="h-[500px]"></div>-->
 
    <!--Scripts-->
    <!--Swiper-->
@@ -471,5 +755,6 @@
    <script src="js/scrollreveal.min.js"></script>
    <!--Main-->
    <script src="js/main.js"></script>
+   <script src="js/mobile.js"></script>
 </body>
 </html>
